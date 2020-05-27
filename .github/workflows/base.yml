@@ -24,7 +24,7 @@ jobs:
             pr_assignee: "irivanych"
             pr_label: "merge"
             pr_milestone: ""
-            pr-draft: true
+            pr-draft: false
             github_token: ${{ secrets.GITHUB_TOKEN }}
         - name: Check outputs
           run: |
