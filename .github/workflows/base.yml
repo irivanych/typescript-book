@@ -3,7 +3,7 @@ name: AUTOTEST
 on:
   push:
     branches: 
-      - test.md
+      - "*.md"
  
 jobs:
     pullrequest:
