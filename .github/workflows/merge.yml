@@ -1,7 +1,7 @@
 name: MERGE
 on:
   pull_request:
-    types: [labeled]
+    types: [opened]
 jobs:
   merge-branch:
     runs-on: ubuntu-latest
