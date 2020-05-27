@@ -1,7 +1,7 @@
 name: CHECK
 on:
   pull_request:
-    types: [opened]
+    types: [opened, edited, assigned]
 jobs:
   merge-branch:
     runs-on: ubuntu-latest
