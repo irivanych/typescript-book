@@ -1,4 +1,4 @@
-name: AUTOTEST
+name: AUTOPR
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
             pr_template: ""
             pr_reviewer: ""
             pr_assignee: "irivanych"
-            pr_label: "auto-pr"
+            pr_label: "merge"
             pr_milestone: ""
             pr-draft: true
             github_token: ${{ secrets.GITHUB_TOKEN }}
