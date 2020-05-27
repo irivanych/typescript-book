@@ -1,0 +1,12 @@
+name: MERGE
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Check outputs
+          run: |
+            echo "Checked!"
