@@ -1,4 +1,4 @@
-name: MERGE
+name: CHECK
 on:
   pull_request:
     types: [opened]
