@@ -1,0 +1,31 @@
+name: AUTOPR
+
+on:
+  push:
+    branches: 
+      - "*.md"
+ 
+jobs:
+    pullrequest:
+      runs-on: ubuntu-latest
+      if: contains(github.event.head_commit.message, 'Done')
+      steps:
+        - uses: actions/checkout@v2
+          
+        - name: pull-request
+          uses: repo-sync/pull-request@v2
+          with: 
+            source_branch: ""
+            destination_branch: "russian"
+            pr_title: "PR for update russian"
+            pr_body: ":crown: *An automated PR*"
+            pr_template: ""
+            pr_reviewer: "irivanych"
+            pr_assignee: "irivanych"
+            pr_label: "ready"
+            pr_milestone: ""
+            pr-draft: false
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+        - name: Check outputs
+          run: |
+            echo "Pull Request Number"
