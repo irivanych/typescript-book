@@ -1,3 +1,5 @@
+name: AUTOMERGE
+
 # Configuration for probot-auto-merge - https://github.com/bobvanderlinden/probot-auto-merge
 
 # The maximum number of reviews from each association that request changes to the pull request.
