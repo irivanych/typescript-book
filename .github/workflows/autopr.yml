@@ -22,7 +22,7 @@ jobs:
             pr_label: "ready"
             pr_milestone: ""
             pr-draft: false
-            github_token: ${{ secrets.AUTO_MERGE_SECRET }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
         - name: Check outputs
           run: |
             echo "Pull Request Number"
