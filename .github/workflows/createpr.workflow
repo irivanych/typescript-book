@@ -8,7 +8,7 @@ action "create-pr" {
   uses = "smartinspereira/auto-create-pr-action@master"
   secrets = ["GITHUB_TOKEN"]
   env = {
-    BRANCH_PREFIX = "russian/"
+    BRANCH_PREFIX = "rus/"
     BASE_BRANCH = "russian1"
     PULL_REQUEST_TITLE = "Auto PR to merge russian translate"
     # PULL_REQUEST_BODY = ""
